@@ -14,9 +14,15 @@ init:
 	python3 -m venv .venv
 	direnv allow .
 
+## install: install project dependencies
+.PHONY: install
+install:
+	pip install -r requirements.txt
+
 ## start: run local project
 .PHONY: start
 start:
 	clear
 	@echo ""
 	python main.py
+
