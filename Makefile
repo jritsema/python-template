@@ -12,12 +12,12 @@ help: Makefile
 .PHONY: init
 init:
 	python3 -m venv .venv
-	python3 -m pip install --upgrade pip
 	direnv allow .
 
 ## install: install project dependencies
 .PHONY: install
 install:
+	python3 -m pip install --upgrade pip
 	pip install -r requirements.txt
 
 ## start: run local project
