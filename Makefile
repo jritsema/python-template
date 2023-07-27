@@ -25,5 +25,5 @@ install:
 start:
 	clear
 	@echo ""
-	python main.py
+	python -u main.py
 
