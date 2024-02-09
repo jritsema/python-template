@@ -19,6 +19,7 @@ init:
 install:
 	python3 -m pip install --upgrade pip
 	pip install -r requirements.txt
+	pip freeze > piplock.txt
 
 ## start: run local project
 .PHONY: start
