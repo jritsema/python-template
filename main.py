@@ -1,5 +1,5 @@
 import logging
-from log import info
+from log import debug, info, warn, error
 
 logging.basicConfig(
     level=logging.INFO,
